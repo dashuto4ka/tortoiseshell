@@ -1,0 +1,283 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+body {
+	margin: 0;
+	font-family: Helvetica;
+}
+
+header {
+	background-image: url(../images/glasses-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30rem;
+	padding-top: 1rem;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+
+nav {
+	background-color: cadetblue;
+	color: white;
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .brand {
+	display: flex;
+	align-items: center;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+nav img {
+	height: 1.5rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+
+ul {
+	margin-right: 1rem;
+	list-style: none;
+}
+
+ul li {
+	display: inline;
+	padding: 0 1rem;
+
+}
+
+.headliner {
+	background: white;
+	padding: 1.5rem 5rem;
+	margin-top: 10rem;
+	margin-right: -2rem;
+}
+
+.headliner h1 {
+	line-height: 1.2;
+}
+
+header .flex {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.services {
+	display: flex;
+	justify-content: center;
+}
+
+.service {
+	width: 5rem;
+	height: 8rem;
+	margin: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.service img {
+	width: 5rem;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+	width: 3.5rem;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+.item {
+	width: 35%;
+	margin-right: 5%;
+	margin-bottom: 4rem;
+}
+
+.title {
+	background-color: cadetblue;
+	color: white;
+	font-weight: bold;
+	padding: 0.5rem 1.25rem;
+	max-width: 10rem;
+}
+
+.item p {
+	padding: 1rem 0;
+}
+
+footer {
+	background-color: azure;
+	padding: 4rem 0;
+	display: flex;
+	align-items: center;
+}
+
+footer img {
+	height: 1.5rem;
+	margin-left: 4rem;
+	margin-right: 1rem;
+}
+
+.go-back {
+	position: fixed;
+	left: 20px;
+	width: 100px;
+	background: grey;
+	text-align: center;
+	padding: 15px 0;
+	opacity: 0.05;
+}
+
+.go-back a {
+	color: white;
+	text-decoration: none;
+}
+
+.go-back:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	header {
+		height: 22rem;
+		padding-top: 0;
+	}
+
+	.container {
+		max-width: 100%;
+	}
+
+	.headliner {
+	   padding: 0.75rem 4rem;
+	   margin-top: 5rem;
+	   margin-right: 2rem;
+    }
+
+    .headliner h1 {
+	   font-size: 1.33rem;
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+	.menu {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: inline;
+		list-style: none;
+		padding-right: 2rem;
+	}
+
+	.brand span {
+		display: none;
+	}
+
+	header {
+		background-position: 20%;
+		height: 17rem;
+	}
+
+	.headliner {
+		width: 100%;
+		margin-right: 0;
+		padding: 1rem 0;
+		margin-top: 8rem;
+		
+	}
+
+	.headliner h1 {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.services {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 3.77rem;
+	}
+
+	.service {
+		margin: 0;
+		padding-bottom: 1.54rem;
+	}
+
+	.service span {
+		font-size: 0.77rem;
+		padding-top: 1rem;
+	}
+
+	.service img {
+	}
+
+
+	.content {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.item {
+		width: 100%;
+		margin-right: 0;
+		font-size: 0.77rem;	
+	}
+
+	.title {
+		max-width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+	.item p {
+		margin-left: 1rem;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer span {
+		display: none;
+	}
+
+	footer img {
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
